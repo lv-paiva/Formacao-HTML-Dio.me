@@ -1,0 +1,114 @@
+<html>
+    <head>
+        <title>Página 1</title>
+    </head>
+    <body>
+        <h1>Desafio de Projeto 1 - Dio.me</h1>
+        <hr />
+        <h2>Índice</h2>
+        <ul>
+            <li><a href="#o-que-html">O que é HTML?</a></li>
+            <li><a href="#o-que-tags">O que são tags HTML?</a></li>
+            <li><a href="#atributos">Atributos</a></li>
+            <li><a href="#tags-titulo">Tags HTML de título</a></li>
+            <li><a href="#tags-texto">Tags HTML de texto</a></li>
+            <li><a href="#tag-link">Tag de link HTML</a></li>
+            <li><a href="#tags-lista">Tags HTML de listas</a></li>
+            <li><a href="outras-tags">Outras tags sugeridas</a></li>
+        </ul>
+        <h2 id="o-que-html">O que é HTML?</h2>
+        <p>
+            HTML é a sigla para <i>HyperText Markup Language (Linguagem de Marcação de Hipertexto, em inglês)</i>. Foi criado na década de 1990 pelo físico britânico <strong><i><a href="https://pt.wikipedia.org/wiki/Tim_Berners-Lee" target="_blank">Tim Berners-Lee</a></i></strong>, considerado o “pai da web”, para auxiliar na formatação dos documentos de pesquisas compartilhados entre ele e seus colegas.<br>
+            Com o desenvolvimento dos navegadores e a popularização da internet, o HTML passou a ser utilizado na criação de sites, tornando-se um dos pilares da “World Wide Web”. Atualmente, a tecnologia evoluiu e é utilizada em conjunto com outras ferramentas, como o CSS e o JavaScript, no desenvolvimento de sites e aplicativos web dinâmicos. </p>
+        <h2 id="o-que-tags">O que são tags HTML?</h2>
+        <p>
+            As tags são usadas para informar ao navegador a estrutura do site. Ou seja: quando se escreve um código em HTML, as tags serão interpretadas pelo navegador, produzindo assim a estrutura e o conteúdo visual da página. <br>
+
+            A principal característica das tags é estarem sempre dentro dos sinais de chevron (sinal de “maior que” e “menor que”), ou seja: < >. <br>
+
+            As tags HTML são divididas em dois tipos: as que precisam de fechamento e as que não precisam de fechamento. As tags que precisam de fechamento possuem a sintaxe &lttag&gt &lt/tag&gt, já as que não precisam de fechamento possuem como estrutura &lttag/&gt. <br>
+
+            Além disso, uma mesma tag pode receber um ou mais atributos, que possuirá um valor que modifica sua estrutura ou funcionalidade.
+        </p>
+        <h2 id="atributos">Atributos</h2>
+        <p>
+            Os atributos são usados para personalizar as tags, modificando sua estrutura ou funcionalidade. Igualmente, os atributos são utilizados para atribuir uma classe ou id a um elemento. <br>
+
+            A maioria das tags tem seus próprios atributos. Contudo, existem alguns atributos genéricos que podem ser utilizados na maioria das tags HTML, vamos estudá-los:
+        </p>
+        <ul>
+            <li><strong>class="..."</strong></li> Atribui uma classe ao elemento (uma classe pode ser utilizada para um ou mais elementos);
+            <li><strong>id="..."</strong></li> Atribui um id ao elemento (um id deve ser único, ou seja atribuído a um único elemento);
+            <li><strong>style="..."</strong></li> Permite incluir elementos CSS (estilos) dentro da tag;
+            <li><strong>lang="..."</strong></li> Define o idioma principal do elemento;
+            <li><strong>title="..."</strong></li> Define o título do elemento;
+            <li><strong>alt="..."</strong></li> Define um texto alternativo e, por isso, é muito utilizado em imagens, auxilia nas práticas de SEO;
+            <li><strong>hidden="..."</strong></li> Oculta o elemento;
+            <li><strong>align="..."</strong></li> Permite definir o padrão de alinhamento desse elemento, como por exemplo: right, center, left e justify;
+            <li><strong>width="..."</strong></li> Define uma largura para o elemento;
+            <li><strong>height="..."</strong></li> Define uma altura para o elemento.
+        </ul>
+        <p>
+            Essas são os principais atributos, porém existem diversos outros que devem ser estudados e podem ser utilizados no seu código.
+        </p>
+        <h2 id="tags-titulo">Tags HTML de título</h2>
+        <p>
+            As tags de título possuem valor semântico, variando entre seis níveis hierárquicos. Para fins de otimização SEO é importante entender como funcionam, e fazer uma utilização adequada. Para definir títulos, utilizamos as tags:   
+        </p>
+        <p>&lth1&gt &lt/h1&gt - Título de maior valor hierárquico <br>
+           &lth2&gt &lt/h2&gt<br>
+           &lth3&gt &lt/h3&gt<br>
+           &lth4&gt &lt/h4&gt<br>
+           &lth5&gt &lt/h5&gt<br>
+           &lth6&gt &lt/h6&gt - Título de menor valor hierárquico
+        </p>
+        <p>
+            Conforme dito anteriormente, a distribuição de título interferem no otimização do SEO de uma página.  Com isso, uma página contendo apenas h1 não seria bem vista pelos mecanismos de busca. Portanto, é importante dividir os títulos deixando o h1 apenas para o título principal, h2 ou h3 para títulos das seções e h4 a h6 para subtítulos ou títulos que possuam baixo valor hierárquico em relação aos demais.
+        </p>
+        <h2 id="tags-texto">Tags HTML de texto</h2>
+        <p>As tags de texto definem textos, estilos de fonte, parágrafos, spans, quebras de linhas, etc. Vamos conhecê-las:</p>
+        <ul>
+            <li><strong>&ltp&gt &lt/p&gt</strong></li> Principal tag de texto, compõe um parágrafo;
+            <li><strong>&ltspan&gt &lt/span&gt</strong></li> Apesar de ter uma funcionalidade e características parecidas com os parágrafos, costumam ser utilizadas apenas para pequenas informações, como legendas de um formulário, legendas de uma imagem, etc. Também pode ser utilizada para formar um container;
+            <li><strong>&ltpre&gt &lt/pre&gt</strong></li> Tag utilizada para representar texto pré-formatado. Muito utilizada para inserir códigos;
+            <li><strong>&ltb&gt &lt/b&gt ou &ltstrong&gt &lt/strong&gt</strong></li> Transforma o conteúdo em negrito;
+            <li><strong>&lti&gt &lt/i&gt</strong></li> Transforma o conteúdo em itálico;
+            <li><strong>&ltbr/&gt</strong></li> Essa tag não necessita de fechamento, ela executa a função de quebra de linha.
+            <li><strong>&lthr/&gt</strong></li> Essa tag não necessita de fechamento, ela forma uma linha horizontal.
+        </ul>
+        <h2 id="tag-link">Tag de link HTML</h2>
+        <p>A tag de link HTML é responsável que faz a ligação entre um documento e outro, sendo ele da mesma página ou de uma página de outro domínio. Esse elemento garantiu que o HTML se destacasse, e moldou a internet da forma que ela é hoje! Portanto, é o principal fundamento que forma a web. <br>
+            Para realizar um link, podemos chamar as tags &lta&gt &lt/a&gt com o atributo href. Por exemplo, caso você queira criar um link no seu texto que redirecione à página inicial do Google:
+        </p>
+        <p>
+            &ltp&gt Para acessar o Google, &lta href="htpps://www.google.com">clique aqui.&lt/a&gt &lt/p&gt<br>
+        </p>
+        <p>
+            Como resultado, teremos:<br>
+            Para acessar o Google, <a href="https://www.google.com.br" target="_blank">clique aqui</a>.
+        </p>
+        <h2 id="tags-lista">Tags HTML de listas</h2>
+        <p>
+            Para poder criar uma lista, podemos utilizar uma lista ordenada, a partir das tags &ltol&gt &lt/ol&gt, ou uma lista não ordenada, a partir das tags &ltul&gt &lt/ul&gt.<br>
+            Posteriormente, incluímos dentro da lista os elementos da mesma, dentro das tags &ltli&gt &lt/li&gt.
+        </p>
+        <p>
+            Vejamos os exemplos a seguir:
+        </p>
+        <p>
+            &ltp&gtMinha lista ordenada:&lt/p&gt<br>
+            &ltul&gt<br>
+            &ltli&gtitem 1&lt/li&gt<br>
+            &ltli&gtitem 2&lt/li&gt<br>
+            &ltli&gtitem 3&lt/li&gt<br>
+            &lt/ul&gt
+        </p>
+         
+          
+        <h2 id="outras-tags">Outras tags sugeridas</h2>
+        <a href="https://www.w3schools.com/tags/tag_font.asp">&ltfont&gt</a> <br>
+        <a href="https://www.w3schools.com/tags/tag_del.asp">&ltdel&gt</a> <br>
+        <a href="https://www.w3schools.com/tags/tag_abbr.asp">&ltabbr&gt</a> <br>
+        
+    </body>
+</html>
